@@ -1,0 +1,223 @@
+Delivered-To: irakozeisabelle7@gmail.com
+Received: by 2002:a05:7108:cf16:b0:555:cd26:486d with SMTP id cq22csp6078283gdc;
+        Mon, 27 Apr 2026 06:07:53 -0700 (PDT)
+X-Received: by 2002:a17:90b:2244:b0:35d:9c32:6219 with SMTP id 98e67ed59e1d1-3614040e440mr44990308a91.9.1777295273176;
+        Mon, 27 Apr 2026 06:07:53 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1777295273; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=LeqHYVCbh6RvETGQA865XElS9aNLu+NTsL449bUvN6q80NTAsaPSvWDhYbD0Sgbqfl
+         7BlH7hLo8Z7+lN+65PWxBAnaGk5Y7zMRe12hID6XIazhGyJwZWfH0vkaU5MykV/dxhnK
+         gge8j5BQAxBN4GH/hCut20u4xljVjSsTLMOj59jTFK1vYPxTgV7wuqctcBFzKK+fVtEQ
+         OPbCkway9xXbzEUUJen3vdcv8h7LhtkWfuGIEAmye5nIpg9GXuWQ7kIIYNxXvS3MRQhY
+         4QM1jmycfjEhsZj8eTGlfUFsz0LQyU/QaloXjTw9N5n5Gf15y2yIgjttXFDKEpFZAmQl
+         tyrQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=oi4s5DQ1AEkRfO/cAC1rHr04TXsFFQCwbfpc0mV3G3s=;
+        fh=GZhqwWuk1ymwScmE/z1/Kwn9YZjcJGwmhP7fky4CkSU=;
+        b=bS8ZmBtcXm+PPEQigKPY3iI3fZOKiwDp00vgIhecBVTOpKAg1TGzFv833puqDzRWm+
+         p116t98I0uFcrnLxk5yj6UbpaXIbkhiOXXhDouV3I8AT05vjiqQHwRJ1O0MRXyGtVLdc
+         MpTibESsPfrpKSD8pdiWso5K6tp5Tao1Q54ZHCI9WWj3OcBvD7hY5EuJnVBGvdMdRkMb
+         8weM7ws5V/yiTi+TWKvGDEmUJ5sRPDrqU9zWDmfs29cHu5J+0UGVTM0YtS10TBHFobdu
+         bYIRWGhIGFLc32cPsxejCfCI8JjYoyFpxkHYtx0aILbUi5zi9DHwTsSrUWCUNALDCmB4
+         g52A==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=I3Tr7tHK;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of cuwase328@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=cuwase328@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <cuwase328@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 98e67ed59e1d1-361418ebf1asor13594838a91.5.2026.04.27.06.07.53
+        for <irakozeisabelle7@gmail.com>
+        (Google Transport Security);
+        Mon, 27 Apr 2026 06:07:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of cuwase328@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=I3Tr7tHK;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of cuwase328@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=cuwase328@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1777295272; cv=none;
+        d=google.com; s=arc-20240605;
+        b=LOyhpZzFsM1DPCIDs2L6U83SNvbxtleFBWB4Sg+gTTWBYVCPpOTwDYw0rLp3o80h0y
+         VYxLbrj9rWSU1E82hQGdIM0eVfwv5IOzpwbOeqyo4mLr9+wZRBk4rcsBpS+vZlMja0Ln
+         io9+dWLbgiomBFeae8i8jvaeHghOPIstvM36YMuxCW5FUOOf3f2u0RUxU8GTPdJvfBn3
+         EXJWtuB0OSkHO2u51bZ4MBT366xkomyjgFTF76FDDbzqozioc/lHACWmGIfa4XD32oHF
+         SoByN7pjyphoe1O/h4GVLqMT0c7E9CF9AHBnmZliCXiGRpCveF46gT64r0iKFAveAih0
+         29UQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=oi4s5DQ1AEkRfO/cAC1rHr04TXsFFQCwbfpc0mV3G3s=;
+        fh=GZhqwWuk1ymwScmE/z1/Kwn9YZjcJGwmhP7fky4CkSU=;
+        b=UXtbzOdeASmXpGZm7EqakmGA9DQalHFW4eejmjsY1PLhgS/z5GIAaftwylLVsROJ+j
+         9uFQbfQQYQMUuL/gjU3FbxywZJm+tbmGbbYViQbkZIGyj7U7VvT6/D+lxHtBaFpavR0o
+         jtpPtFw8/74/COKlGOWBaJD5iR3WV6Wp3spz6FapA0MCaajDd2yBnCVWanOxJ8US4Kl5
+         /sxnLNb3/y8IFhiLDbba57VcxOFBB9obc4r0GQ4cQtXZwpcbKO0RsyBI4nptGrToEzw1
+         lRR+mj3zbP1BWKbez7XAPQfZCjwlaEYWxNt0fqmS4wRuPkeBQdu77nZRriQC01EEV+3t
+         gsIw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1777295272; x=1777900072; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=oi4s5DQ1AEkRfO/cAC1rHr04TXsFFQCwbfpc0mV3G3s=;
+        b=I3Tr7tHKaJy6hItXc1+hlqKcxxc2vDzSP0fQLdFDrhjI/WSy4/yxUy90tGKuD54uAn
+         d2DYn64lm312XSvhnHlMlN3ZwmWTHAttL1IEavHGjN//XH7MB2ka2SKM6hx8/SKOI2/0
+         byYrJLHWJbCeZrhMYenZyBaoKG89l6bwILU0hvB/1AsOIMAkYLj/SlozfPg1zUAOU/VN
+         4XP56uapaPkrhzGPdKOR1qeC+8JYrWUZCljsviSFRP0hJDBkWkS/YBnFR4perlyMtEe/
+         JZUjBVckTwi+sT7DrwNJcd/Nh3v+Wmnt/X6sIsZY9LlS68Z7vt0gyu1d+uon0mozox1q
+         VYgw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1777295272; x=1777900072;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-gg:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=oi4s5DQ1AEkRfO/cAC1rHr04TXsFFQCwbfpc0mV3G3s=;
+        b=FhU0zk8jQEe4BHtmoItLasFrTEGswR5nn416uh7dh7w1pGsEe5eptmmuyd33JNlEjg
+         V0K4fzcO9mQlr9b7TffMP+ULQrWso9eZ9zhlkvAQHZB5cnQ6j2enzAScGXYmTMnU1KTQ
+         bE/5ysolwO2ZwaapiHq4SYmwIhWJvcPExIOKjcXNyKByw4lEXsa2W6zCWg62jPYxlWbX
+         cZtqaqvuxCaH6VkfsDT+onEhK3pQreguOynGj4xl2274jgGUh7ckR1/91OJGo5WOO0MQ
+         pngl3t67f6cNpTM6/iwpXxOchtSJzgegNHKA+b2m5GifCY5D3js1i70yue2RQepn+jl2
+         U3pg==
+X-Gm-Message-State: AOJu0Yze3qhX2P6TqBzPohmM1YEptDD85i86lswbqoV32DO0JQg6uX0a
+	f08siKbY8JZ9aNdBz5tng/rHdCOp0HVuKJlKKSK1YQahEAWnRR3Y+0B4JGrTLoFq0n6jpBOCdjt
+	dgNY6zcVnWsb0QMPtFKcZis3CBcjDXiK4hCw2
+X-Gm-Gg: AeBDievi7c5dER4e4wBRv5AtmENCHL8voLK8R+yZ3Rqh8hijULrgvthMybVzSQmiofv
+	Ay6CKw3BrLww+BAhvRjqD/gZJhLmREa3Yg5z3G3eJ1LsLOkl2tMT3cRlBVFtJ2eORUPX6vt7Kp5
+	coROVLf9GaJ1nae6ssNWaJldbUxS+zJ/nSYLXZ/mFGO4I1Wm9j+3Rm0fH9bhEL7a5sjXDQ8qMxo
+	RRiNjym2VHuhbDtYd0+zIz5h4+97eEO9MHX+Xz2tAMMAY4b3IPCe/k7oWBqEvon8LKxKomNBOKH
+	hWygfov7IoscOp3X7660Rs0L00f1
+X-Received: by 2002:a17:90a:e7ca:b0:35d:8fdb:4f36 with SMTP id
+ 98e67ed59e1d1-3614048a21bmr44791938a91.18.1777295272107; Mon, 27 Apr 2026
+ 06:07:52 -0700 (PDT)
+MIME-Version: 1.0
+References: <CA+RiGeqy1zaeHx2OLfizMdv-Vqv8bPjVgsWHUsLg7p_L-pc=pA@mail.gmail.com>
+In-Reply-To: <CA+RiGeqy1zaeHx2OLfizMdv-Vqv8bPjVgsWHUsLg7p_L-pc=pA@mail.gmail.com>
+From: Uwase Cynthia <cuwase328@gmail.com>
+Date: Mon, 27 Apr 2026 06:08:34 -0700
+X-Gm-Features: AVHnY4JmQfAfaD7vLedxYbdhX_gJU3KzGM8Z72lTKnaQ5yZJgD8KFCSjPd9zYFU
+Message-ID: <CAP9Vf3xRbTJCMFg+CRp80Dmo53DCUWxaRCK2niM6g2eHPf3_FA@mail.gmail.com>
+Subject: Fwd: National Practical Exam
+To: "irakozeisabelle7@gmail.com" <irakozeisabelle7@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000005ae0dc065070cde6"
+
+--0000000000005ae0dc065070cde6
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ---------
+From: hirwa chris <hirwachristophe25@gmail.com>
+Date: Mon, Apr 27, 2026 at 2:53=E2=80=AFAM
+Subject: National Practical Exam
+To: cuwase328@gmail.com <cuwase328@gmail.com>
+
+
+Task: Develop Stock Inventory Management System(SIMS)
+As a full stack developer, you are given 7 hours to develop that web based
+application by:
+1.Using attributes provided below , design an entity relationship diagram
+(ERD)that represents relation ship between their entities.
+> identify appropriate primary keys and foreign keys based on the
+relationship between their entities.
+> Entities and attributes are:
+1. Spare_Part (Name, Category,Quantity, UnitPrice, TotalPrice)
+2.Stock_In ( StockInQuantity, StockInDate)
+3.Stock_Out (StockOutQuantity, StockOutUnitPrice,
+StockOutTotalPrice,StockOutDate)
+>ERD should be drawn before using the computer.
+>ERD should be drawn on plain paper using pencils
+>ERD should be indicates cardinalities , relationships with correct symbols
+
+2. creating database called SIMS with Spare_Part, Stock_In, Stock_Out
+tables as designed in ERD above.
+
+3. Preparing React.js Front_end application environment by installing
+required modules and dependencies
+
+4. Prepare Javascript runtime environment for Node.js
+
+5. creating react.js components with ui features that will enable user to
+input his data in the tables above and display required reports.
+>Menu bar/pages of web application should include spare_part , stock_in and
+stock_out, reports and logout options
+
+6. Developing backend and frontend  of parking sales management system.
+> Name backend folder as backend-project and frontend folder as
+frontend-project.
+>Use tailwind CSS to implement UI design.
+>Your backend application should communicate to MYSQL database to perform
+CRUD operations  of using Node.js runtime environment and express.js
+framework.
+
+Note: 1. Insert operation should be used on all four (4) forms (Spare_part,
+stock_in and stock_out)
+         2. Delete , Update , Retirieve operations should only be used on
+Stock_out form
+
+7. Creating a session based login user account having username and
+password.|
+       > Password must be strong and encrypted
+
+8. Integrating your react.js application using Axios to enable interaction
+of your react.js application  with node.js application .
+
+9. Generating daily StockOut report
+
+10.Generating daily Stock status composed by spare part name , stored
+Quantity , StockOut and remaining Quantity.
+
+--0000000000005ae0dc065070cde6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br><div class=3D"gmail_quote gmail_quote_container"><=
+div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded message ---------=
+<br>From: <strong class=3D"gmail_sendername" dir=3D"auto">hirwa chris</stro=
+ng> <span dir=3D"auto">&lt;<a href=3D"mailto:hirwachristophe25@gmail.com">h=
+irwachristophe25@gmail.com</a>&gt;</span><br>Date: Mon, Apr 27, 2026 at 2:5=
+3=E2=80=AFAM<br>Subject: National Practical Exam<br>To: <a href=3D"mailto:c=
+uwase328@gmail.com">cuwase328@gmail.com</a> &lt;<a href=3D"mailto:cuwase328=
+@gmail.com">cuwase328@gmail.com</a>&gt;<br></div><br><br><div dir=3D"ltr">T=
+ask: Develop Stock Inventory Management System(SIMS)<br>As a full stack dev=
+eloper, you are given 7 hours to develop that web based application by:<br>=
+1.Using attributes provided below , design an entity relationship diagram (=
+ERD)that represents relation ship between their entities.<br>&gt; identify =
+appropriate primary keys and foreign keys based on the relationship between=
+ their entities.<br>&gt; Entities and attributes are:<br>1. Spare_Part (Nam=
+e, Category,Quantity, UnitPrice, TotalPrice)<br>2.Stock_In ( StockInQuantit=
+y, StockInDate)<br>3.Stock_Out (StockOutQuantity, StockOutUnitPrice, StockO=
+utTotalPrice,StockOutDate)<br>&gt;ERD should be drawn before using the comp=
+uter.<br>&gt;ERD should be drawn on plain paper using pencils<br>&gt;ERD sh=
+ould be indicates cardinalities , relationships with correct symbols<br><br=
+>2. creating database called SIMS with Spare_Part, Stock_In, Stock_Out tabl=
+es as designed in ERD above.<br><br>3. Preparing React.js Front_end applica=
+tion environment by installing required modules and dependencies<br><br>4. =
+Prepare Javascript runtime environment for Node.js<br><br>5. creating react=
+.js components with ui features that will enable user to input his data in =
+the tables above and display required reports.<br>&gt;Menu bar/pages of web=
+ application should include spare_part , stock_in and stock_out, reports an=
+d logout options<br><br>6. Developing backend and frontend =C2=A0of parking=
+ sales management system.<br>&gt; Name backend folder as backend-project an=
+d frontend folder as frontend-project.<br>&gt;Use tailwind CSS to implement=
+ UI design.<br>&gt;Your backend application should communicate to MYSQL dat=
+abase to perform CRUD operations =C2=A0of using Node.js runtime environment=
+ and express.js framework.<br><br>Note: 1. Insert operation should be used =
+on all four (4) forms (Spare_part, stock_in and stock_out)<br>=C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A02. Delete , Update , Retirieve operations should only =
+be used on Stock_out form<br><br>7. Creating a session based login user acc=
+ount having username and password.|<br>=C2=A0 =C2=A0 =C2=A0 =C2=A0&gt; Pass=
+word must be strong and encrypted<br><br>8. Integrating your react.js appli=
+cation using Axios to enable interaction of your react.js application =C2=
+=A0with node.js application .<br><br>9. Generating daily StockOut report<br=
+><br>10.Generating daily Stock status composed by spare part name , stored =
+Quantity , StockOut and remaining Quantity.<br></div>
+</div></div>
+
+--0000000000005ae0dc065070cde6--
